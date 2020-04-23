@@ -1,0 +1,6 @@
+app:frontend ath3 8
+app:search ath5 4
+app:geo ath1 4
+app:rate ath2 4
+app:profile ath4 4
+server:ath8 40001

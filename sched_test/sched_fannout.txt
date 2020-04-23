@@ -1,0 +1,7 @@
+app:load_balancer ath1 1
+app:leaf_service_0 ath2 1
+app:leaf_service_1 ath3 1
+app:leaf_service_2 ath4 1
+app:leaf_service_3 ath5 1
+app:leaf_service_4 ath9 1
+server:ath8 40001
