@@ -1,0 +1,712 @@
+{
+        "microservices": [
+                {
+                        "service_name": "load_balancer", 
+                        "service_domain": "", 
+                        "instance_name": "load_balancer", 
+                        "scheduler": {
+                          "num_threads": 1, 
+                          "type": "CMT", 
+                          "cores": [
+                            20
+                          ]
+                        }, 
+                        "machine_id": 0, 
+                        "model_name": "load_balancer"
+                }, 
+                {
+                        "service_name": "nginx", 
+                        "service_domain": "", 
+                        "instance_name": "nginx", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 1, 
+                        "model_name": "nginx"
+                }, 
+                {
+                        "service_name": "media_frontend", 
+                        "service_domain": "", 
+                        "instance_name": "media_frontend", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 2, 
+                        "model_name": "media_frontend"
+                }, 
+                {
+                        "service_name": "unique_id", 
+                        "service_domain": "", 
+                        "instance_name": "unique_id", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20,
+                            21,
+                            22,
+                            23
+                          ]
+                        }, 
+                        "machine_id": 3, 
+                        "model_name": "unique_id"
+                }, 
+                {
+                        "service_name": "url_shorten", 
+                        "service_domain": "", 
+                        "instance_name": "url_shorten", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20,
+                            21,
+                            22,
+                            23
+                          ]
+                        }, 
+                        "machine_id": 4, 
+                        "model_name": "url_shorten"
+                }, 
+                {
+                        "service_name": "media", 
+                        "service_domain": "", 
+                        "instance_name": "media", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20,
+                            21,
+                            22,
+                            23
+                          ]
+                        }, 
+                        "machine_id": 5, 
+                        "model_name": "media"
+                }, 
+                {
+                        "service_name": "text", 
+                        "service_domain": "", 
+                        "instance_name": "text", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 6, 
+                        "model_name": "text"
+                }, 
+                {
+                        "service_name": "user_tag", 
+                        "service_domain": "", 
+                        "instance_name": "user_tag", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 7, 
+                        "model_name": "user_tag"
+                }, 
+                {
+                        "service_name": "recommender", 
+                        "service_domain": "", 
+                        "instance_name": "recommender", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 8, 
+                        "model_name": "recommender"
+                }, 
+                {
+                        "service_name": "read_home_timeline", 
+                        "service_domain": "", 
+                        "instance_name": "read_home_timeline", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 9, 
+                        "model_name": "read_home_timeline"
+                }, 
+                {
+                        "service_name": "compose_post", 
+                        "service_domain": "", 
+                        "instance_name": "compose_post", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 10, 
+                        "model_name": "compose_post"
+                }, 
+                {
+                        "service_name": "user", 
+                        "service_domain": "", 
+                        "instance_name": "user", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 11, 
+                        "model_name": "user"
+                }, 
+                {
+                        "service_name": "social_graph", 
+                        "service_domain": "", 
+                        "instance_name": "social_graph", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 12, 
+                        "model_name": "social_graph"
+                }, 
+                {
+                        "service_name": "search", 
+                        "service_domain": "", 
+                        "instance_name": "search", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 13, 
+                        "model_name": "search"
+                }, 
+                {
+                        "service_name": "post_storage", 
+                        "service_domain": "", 
+                        "instance_name": "post_storage", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 14, 
+                        "model_name": "post_storage"
+                }, 
+                {
+                        "service_name": "user_timeline", 
+                        "service_domain": "", 
+                        "instance_name": "user_timeline", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 15, 
+                        "model_name": "user_timeline"
+                }, 
+                {
+                        "service_name": "rabbitmq", 
+                        "service_domain": "", 
+                        "instance_name": "rabbitmq", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 16, 
+                        "model_name": "rabbitmq"
+                }, 
+                {
+                        "service_name": "write_home_timeline", 
+                        "service_domain": "", 
+                        "instance_name": "write_home_timeline", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 17, 
+                        "model_name": "write_home_timeline"
+                }, 
+                {
+                        "service_name": "memcached_0", 
+                        "service_domain": "", 
+                        "instance_name": "memcached_0", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 18, 
+                        "model_name": "memcached"
+                },
+                {
+                        "service_name": "memcached_1", 
+                        "service_domain": "", 
+                        "instance_name": "memcached_1", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 19, 
+                        "model_name": "memcached"
+                },
+                {
+                        "service_name": "redis_0", 
+                        "service_domain": "", 
+                        "instance_name": "redis_0", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 20, 
+                        "model_name": "redis"
+                },
+                {
+                        "service_name": "redis_1", 
+                        "service_domain": "", 
+                        "instance_name": "redis_1", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 21, 
+                        "model_name": "redis"
+                },
+                {
+                        "service_name": "memcached_2", 
+                        "service_domain": "", 
+                        "instance_name": "memcached_2", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 22, 
+                        "model_name": "memcached"
+                },
+                {
+                        "service_name": "memcached_3", 
+                        "service_domain": "", 
+                        "instance_name": "memcached_3", 
+                        "scheduler": {
+                          "num_threads": 4, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 23, 
+                        "model_name": "memcached"
+                },
+                {
+                        "service_name": "mongodb_0", 
+                        "service_domain": "", 
+                        "instance_name": "mongodb_0", 
+                        "scheduler": {
+                          "num_threads": 10, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 24, 
+                        "model_name": "mongodb"
+                }, 
+                {
+                        "service_name": "mongodb_1", 
+                        "service_domain": "", 
+                        "instance_name": "mongodb_1", 
+                        "scheduler": {
+                          "num_threads": 10, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 25, 
+                        "model_name": "mongodb"
+                }, 
+                {
+                        "service_name": "mongodb_2", 
+                        "service_domain": "", 
+                        "instance_name": "mongodb_2", 
+                        "scheduler": {
+                          "num_threads": 10, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 26, 
+                        "model_name": "mongodb"
+                }, 
+                {
+                        "service_name": "mongodb_3", 
+                        "service_domain": "", 
+                        "instance_name": "mongodb_3", 
+                        "scheduler": {
+                          "num_threads": 10, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 27, 
+                        "model_name": "mongodb"
+                }, 
+                {
+                        "service_name": "mongodb_4", 
+                        "service_domain": "", 
+                        "instance_name": "mongodb_4", 
+                        "scheduler": {
+                          "num_threads": 10, 
+                          "type": "CMT", 
+                          "cores": [
+                            20, 
+                            21, 
+                            22, 
+                            23
+                          ]
+                        }, 
+                        "machine_id": 28, 
+                        "model_name": "mongodb"
+                }
+        ],
+        "edges": [
+                {
+                        "biDirectional": false, 
+                        "source": "load_balancer", 
+                        "target": "nginx"
+                }, 
+                {
+                        "biDirectional": false, 
+                        "source": "load_balancer", 
+                        "target": "media_frontend"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "media_frontend", 
+                        "target": "media"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "media_frontend", 
+                        "target": "memcached_3"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "media_frontend", 
+                        "target": "mongodb_4"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "unique_id"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "url_shorten"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "read_home_timeline"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "search"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "media"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "post_storage"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "text"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "social_graph"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "user_tag"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "nginx", 
+                        "target": "recommender"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "unique_id", 
+                        "target": "compose_post"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "url_shorten", 
+                        "target": "compose_post"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "media", 
+                        "target": "compose_post"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "text", 
+                        "target": "compose_post"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "nginx", 
+                        "target": "user"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "recommender", 
+                        "target": "user"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "read_home_timeline", 
+                        "target": "memcached_1"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "read_home_timeline", 
+                        "target": "mongodb_1"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "read_home_timeline", 
+                        "target": "post_storage"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "read_home_timeline", 
+                        "target": "redis_1"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "compose_post", 
+                        "target": "post_storage"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "compose_post", 
+                        "target": "user_timeline"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "compose_post", 
+                        "target": "rabbitmq"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "user", 
+                        "target": "compose_post"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "user", 
+                        "target": "memcached_0"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "user", 
+                        "target": "mongodb_0"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "social_graph", 
+                        "target": "user"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "social_graph", 
+                        "target": "memcached_2"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "social_graph", 
+                        "target": "mongodb_3"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "search", 
+                        "target": "mongodb_1"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "post_storage", 
+                        "target": "memcached_1"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "post_storage", 
+                        "target": "mongodb_1"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "user_timeline", 
+                        "target": "post_storage"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "user_timeline", 
+                        "target": "redis_0"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "user_timeline", 
+                        "target": "mongodb_2"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "rabbitmq", 
+                        "target": "write_home_timeline"
+                },
+                {
+                        "biDirectional": true, 
+                        "source": "write_home_timeline", 
+                        "target": "redis_1"
+                },
+                {
+                        "biDirectional": false, 
+                        "source": "write_home_timeline", 
+                        "target": "social_graph"
+                }
+        ],
+        "net_latency": 65000
+}
